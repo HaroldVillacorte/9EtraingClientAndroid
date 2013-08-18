@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>9E Training</title>
+    <meta name="description" content="9E training client application.">
+    <link rel="stylesheet" href="stylesheets/foundation.min.css" />
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/custom.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+    <script src="javascripts/foundation3/modernizr.foundation.js"></script>
+</head>
+
+<body>
+    <nav class="top-bar" id="top-bar">
+        <ul>
+          <!-- Title Area -->
+          <li class="name">
+            <h1 id="logo">
+              <a href="index.html" title="9E Training home page.">
+                9E Training
+              </a>
+            </h1>
+          </li>
+          <li class="toggle-topbar" id="toggle-topbar"><a href="#"></a></li>
+        </ul>
+
+        <section>
+          <!-- Left Nav Section -->
+          <ul class="left" id="study-links">
+              <li class="divider"></li>
+          </ul>
+
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li class="divider hide-for-small hide-for-medium"></li>
+            <li>
+                <a href="settings.html" class="settings-link">
+                    Settings
+                </a>
+            </li>
+          </ul>
+        </section>
+    </nav>
+
+    <div id="content-wrapper" class="row">
+        <section id="ajax-content" class="columns twelve">
+            <div id="messages"></div>
+            <p><a class="button large settings-link" id="settings-front" href="settings.html">Settings</a></p>
+        </section>
+    </div>
+
+
+    <div id="sync-modal" class="reveal-modal [xlarge]">
+        <h2>Data was successfully synchronized.</h2>
+        <p class="lead">The app will need to be refreshed.</p>
+        <p><button class="button success large" id="sync-refresh-button">Refresh Now</button></p>
+    </div>
+
+
+    <script src="javascripts/foundation3/jquery.js"></script>
+    <script src="javascripts/foundation3/foundation.min.js"></script>
+    <script src="javascripts/9etraining-ajax.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/foundation3/app.js"></script>
+</body>
+</html>
